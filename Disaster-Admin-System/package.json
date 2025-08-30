@@ -1,0 +1,27 @@
+{
+  "name": "disastermanagement_admin_panel",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "start:dev": "NODE_ENV=development ENABLE_DEV_TOOLS=true electron .",
+    "start:prod": "NODE_ENV=production electron .",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "setup": "node setup.js",
+    "postinstall": "node setup.js",
+    "validate-env": "node -e \"require('dotenv').config(); console.log('Environment validation completed')\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "electron": "^37.2.5"
+  },
+  "dependencies": {
+    "chart.js": "^4.5.0",
+    "date-fns": "^4.1.0",
+    "dotenv": "^17.2.1",
+    "firebase": "^12.0.0"
+  }
+}
